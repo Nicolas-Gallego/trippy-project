@@ -17,11 +17,6 @@ export default class Home extends Component {
     return (
       <div>
         <h1>Découvrir le monde</h1>
-       {this.state.cities.length !== 0 ? this.state.cities.map((city) => {
-           return (
-               <CityCard/>
-           )
-       })}
 
       </div>
     );
