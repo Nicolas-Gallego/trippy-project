@@ -2,9 +2,11 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import config from '../src/utils/api'
 
 class App extends React.Component {
   render() {
+    console.log(config)
     return (
       <div className="App">
         <header className="App-header">
