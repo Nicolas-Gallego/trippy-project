@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import config from '../src/utils/api'
 // import NavBar from './Components/NavBar';
 // import CityCard from './Components/CityCard';
 // import HotelCard from './Components/HotelCard';
@@ -14,7 +15,10 @@ class App extends React.Component {
 
     }
   }
+
+  
   render() {
+    console.log(config)
     return (
       <BrowserRouter>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
