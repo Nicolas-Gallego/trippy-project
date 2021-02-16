@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import config from '../src/utils/api'
 import Home from "./components/Home"
+import Hotels from "./components/Hotels"
 import "./App.css"
 // import NavBar from './Components/NavBar';
 // import CityCard from './Components/CityCard';
@@ -29,9 +30,9 @@ class App extends React.Component {
 
         <Switch>
           <Route exact path="/" component={Home} />
-          {/* <Route path="/:city" component={Hotels} />
-          <Route path="/:id" component={HotelPage} />
-          <Route path="*" component={Error404} /> */}
+          <Route path="/:city" component={Hotels} />
+          {/* <Route path="/:id" component={HotelPage} /> */}
+          {/* <Route path="*" component={Error404} />  */}
         </Switch>
 
       </BrowserRouter>
