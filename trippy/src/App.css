@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "montserra";
+  src: url("./fonts/Montserrat-Regular.ttf");
+}
+
+
 body{
-  background-color : #cccccc
+  font-family: "montserra";
+  background-color : #cccccc;
+  color: #2a2a2a;
+  font-weight: 400;
+}
+
+.navbar {
+  background-color: #00a64a;
+  font-weight: 900;
+}
+
+h1{
+  font-size: 22px;
+  font-weight: 700;
+}
+
+h2{
+  font-size: 14px;
+  font-weight: 200;
 }
