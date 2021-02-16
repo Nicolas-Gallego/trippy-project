@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import config from '../src/utils/api'
 import Home from "./components/Home"
+import "./App.css"
 // import NavBar from './Components/NavBar';
 // import CityCard from './Components/CityCard';
 // import HotelCard from './Components/HotelCard';
