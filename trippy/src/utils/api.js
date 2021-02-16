@@ -1,9 +1,14 @@
-let config ={
-    host:"//localhost:3002"
+let config = {
+    host: "http://localhost:3002"
 }
 
-const getHomeData=()=>{
-    return fetch(config.host + "/api/home")
+const getHomeData = () =>{
+    fetch(`${config.host}/api/home`)
+    .then((response) => response.json())
+    .then((result)=> {
+        console.log(result)
+    })
 }
 
+getHomeData()
 export default config;
