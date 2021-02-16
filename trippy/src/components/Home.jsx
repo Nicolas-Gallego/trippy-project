@@ -8,13 +8,14 @@ export default class Home extends Component {
     super(props);
     this.state = {
       cities: [],
+      image: "http://localhost:3002",
     };
   }
 
   componentDidMount() {
     getHomeData()
     .then((result) =>
-    {this.setState({cities: result.cities})});
+    { this.setState({cities: result.cities})});
   }
 
 
@@ -25,7 +26,8 @@ export default class Home extends Component {
         <h1>Découvrir le monde</h1>
         {this.state.cities.length !== 0 &&
           this.state.cities.map((city) => {
-            return <CityCard cityName={city.name} />;
+            console.log(city.source);
+            return <CityCard cityName={city.name} image={this.state.image + city.source}/>;
           })}
       </div>
     );
