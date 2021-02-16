@@ -3,6 +3,7 @@ import CityCard from "./CityCard";
 import getHomeData from "../utils/api.js";
 import NavBar from "./NavBar";
 
+
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -12,7 +13,7 @@ export default class Home extends Component {
   }
 
   componentDidMount() {
-    getHomeData();
+    getHomeData()
   }
 
   render() {

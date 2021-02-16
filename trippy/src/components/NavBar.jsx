@@ -5,31 +5,31 @@ export default class NavBar extends Component {
   render() {
     return (
       <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <Link Link to="/" class="navbar-brand">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <div className="container-fluid">
+            <Link Link to="/" className="navbar-brand">
               Trippy
             </Link>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+              data-toggle='collapse'
+              data-target='#navbarNav'
+              aria-controls='navbarNav'
+              aria-expanded='false'
+              aria-label='Toggle navigation'
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <Link Link to="/" class="nav-link active" aria-current="page">
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <div className="navbar-nav">
+                <Link to="/" className="nav-link active" aria-current="page">
                   Home
                 </Link>
-                <Link to="/hotel" class="nav-link">
+                <Link to="/hotel" className="nav-link">
                   Hotel
                 </Link>
-                <Link to="/hotel-page" class="nav-link">
+                <Link to="/hotel-page" className="nav-link">
                   HotelPage
                 </Link>
               </div>
