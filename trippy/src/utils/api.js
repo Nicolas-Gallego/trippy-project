@@ -1,4 +1,4 @@
-let config = {
+const config = {
     host: "http://localhost:3002"
 }
 
@@ -10,5 +10,4 @@ const getHomeData = () =>{
     })
 }
 
-getHomeData()
-export default config;
+export default getHomeData;
