@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import CityCard from "./CityCard";
 import getHomeData from "../utils/api.js";
 import NavBar from "./NavBar";
+import HotelMap from "./HotelMap"
 
 export default class Home extends Component {
   constructor(props) {
