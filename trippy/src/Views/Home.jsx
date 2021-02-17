@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 import CityCard from '../Components/CityCard';
 import getHomeData from "../utils/api.js";
+
 import NavBar from "../Components/NavBar";
 import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
+
+import HotelMap from "../Components/HotelMap"
 
 
 export default class Home extends Component {
