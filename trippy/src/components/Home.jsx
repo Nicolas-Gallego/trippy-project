@@ -15,7 +15,7 @@ export default class Home extends Component {
   componentDidMount() {
     getHomeData()
     .then((result) =>
-    { this.setState({cities: result.cities})});
+   { this.setState({cities: result.cities})});
   }
 
 
