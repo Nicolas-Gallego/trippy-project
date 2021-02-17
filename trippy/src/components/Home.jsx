@@ -21,15 +21,17 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div >
         <NavBar />
         <h1>Découvrir le monde</h1>
-        <div className="row d-flex  row-cols-md-2 ">
-          {this.state.cities.length !== 0 &&
-            this.state.cities.map((city) => {
-              console.log(city.source);
-              return <CityCard cityName={city.name} image={this.state.image + city.source}/>;
-            })}
+        <div className="container">
+          <div className="row d-flex justify-content-center ">
+            {this.state.cities.length !== 0 &&
+              this.state.cities.map((city) => {
+                console.log(city.source);
+                return <CityCard cityName={city.name} image={this.state.image + city.source}/>;
+              })}
+          </div>
         </div>
       </div>
     );
