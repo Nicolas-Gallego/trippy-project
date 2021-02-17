@@ -23,7 +23,7 @@ export default class NavBar extends Component {
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
               <div className="navbar-nav">
-                <Link to="/hotel" className="nav-link">
+                <Link to="/hotels" className="nav-link">
                   Hotels
                 </Link>
                 <Link to="/" className="nav-link">
