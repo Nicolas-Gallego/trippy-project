@@ -9,11 +9,12 @@ export default class HotelCard extends Component {
         return (
             <div>
                 <h2>{this.props.name}</h2>
+                
                 <img src={this.props.image}  alt="No image found" className="hotel-image"/>
                 <h2>{this.props.stars}</h2>
                 <p>{this.props.price}</p>
            
-                <h1>test</h1>
+                 
                   
             </div>
         )

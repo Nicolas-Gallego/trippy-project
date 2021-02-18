@@ -1,15 +1,16 @@
 import React, { Component } from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { Map, TileLayer, Marker, Popup } from "react-leaflet";
 import "../App.css"
 
 export default class HotelMap extends Component {
   render() {
     return (
       <div>
-        <MapContainer 
+        <Map 
           center={[this.props.cityLatitude, this.props.cityLongitude]}
           zoom={13}
           scrollWheelZoom={false}
+          style={{height:300}}
         >
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -20,7 +21,7 @@ export default class HotelMap extends Component {
               A pretty CSS3 popup. <br /> Easily customizable.
             </Popup>
           </Marker>
-        </MapContainer>
+        </Map>
       </div>
     );
   }

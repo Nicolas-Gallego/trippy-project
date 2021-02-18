@@ -15,6 +15,10 @@ export default class Hotel extends Component {
             hotels: [],
             image: "http://localhost:3002",
             //  hotelURL: 'http://localhost:3002/api/hotels/city/<city>'
+            center:{
+                lat: 0,
+                lon: 0,
+            },
         }
     }
 
@@ -27,17 +31,26 @@ export default class Hotel extends Component {
                 console.log(response);
                 this.setState({
                     hotels: response.results,
+                    center: response.center,
 
                 })
                 console.log("hotel==", this.state.hotels);
             })
     }
     render() {
+        console.log("Map of the City center :", this.state.center)
+        let newLat = this.state.center.lat;
+        let newLong = this.state.center.lon;
+        console.log("City center lat :", newLat);
+        console.log("City center long :", newLong);
         return (
             <div>
-                <p>Hotels</p>
+
                 <div>
-                    {/* {this.state.hotels.length !== 0 ?  */}
+                    <HotelMap cityLatitude={newLat} 
+                              cityLongitude={newLong}/> 
+                </div>
+                <div>
                     {this.state.hotels.map((cityHotelList) => {
                         return (
                             <div>
@@ -49,10 +62,6 @@ export default class Hotel extends Component {
                         )
                     })}
                 </div>
-                <div>
-                    {/* <HotelMap /> */}
-                </div>
-
             </div>
         )
     }
