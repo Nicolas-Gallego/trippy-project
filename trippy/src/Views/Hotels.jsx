@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { BrowserRouter } from 'react-router-dom';
 
-import CityCard from '../Components/CityCard';
-import HotelMap from '../Components/HotelMap';
-import HotelCard from '../Components/HotelCard';
+import CityCard from '../components/CityCard';
+import HotelMap from '../components/HotelMap';
+import HotelCard from '../components/HotelCard';
 import getHomeData from "../utils/api.js";
-import NavBar from "../Components/NavBar";
+import NavBar from "../components/NavBar";
 
 
 export default class Hotel extends Component {
