@@ -9,7 +9,7 @@ export default class Hotelpage extends Component {
     render() {
         return (
             <div>
-                <p>Hotelpage</p>
+                <p>Hotel page</p>
             </div>
 
         );
