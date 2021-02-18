@@ -32,7 +32,7 @@ export default class Home extends Component {
         {this.state.cities.length !== 0 &&
           this.state.cities.map((city) => {
             console.log(city.source);
-            return <CityCard cityName={city.name} image={this.state.image + city.source}/>;
+            return <CityCard slug={city.slug} cityName={city.name} image={this.state.image + city.source}/>;
           })}
       </div>
     );

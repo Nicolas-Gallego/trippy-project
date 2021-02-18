@@ -32,7 +32,7 @@ class App extends React.Component {
 
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/hotels" component={Hotels} />
+          <Route path="/hotels/:city" component={Hotels} />
           <Route path="/hotel" component={HotelPage} />
           {/* <Route path="/:id" component={HotelPage} /> */}
           <Route path="*" component={Error404} /> 

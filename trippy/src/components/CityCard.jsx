@@ -8,9 +8,10 @@ export default class CityCard extends Component {
 
         return (
             <div>
-            <Link to={`/${this.props.cityName}`}>
+            <Link to={`/hotels/${this.props.slug}`}>
                 <h2>{this.props.cityName}</h2>
-                <img src={source}  alt="..." />
+                <img src={source}  alt="..."
+                 />
                 
             </Link>
                 

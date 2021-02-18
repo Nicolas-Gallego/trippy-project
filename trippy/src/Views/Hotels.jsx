@@ -11,16 +11,15 @@ export default class Hotel extends Component {
         super(props);
         this.state = {
             hotels: [],
-            hotelURL: 'http://localhost:3002/api/hotels/city/<city>'
+            image: "http://localhost:3002",
+            //  hotelURL: 'http://localhost:3002/api/hotels/city/<city>'
         }
     }
 
     componentDidMount() {
-        this.loadHotel();
-    }
-    loadHotel() {
         console.log('loadHotel');
-        fetch(`http://localhost:3002/api/hotels/city/${this.state.hotels}`)
+        let url = `http://localhost:3002/api/hotels/city/${this.props.match.params.city}`
+        fetch(url)
             .then((response) => response.json())
             .then((response) => {
                 console.log(response);
@@ -28,27 +27,29 @@ export default class Hotel extends Component {
                     hotels: response.results,
 
                 })
-                console.log(this.state.hotels);
+                console.log("hotel==", this.state.hotels);
             })
     }
-
-
     render() {
         return (
             <div>
-
-                <h1>Hotel</h1>
-                {this.state.hotels.length !== 0 &&
-                    this.state.hotels.map((cityHotelList) => {
-
+                <p>Hotels</p>
+                <div>
+                    {/* {this.state.hotels.length !== 0 ?  */}
+                    {this.state.hotels.map((cityHotelList) => {
                         return (
                             <div>
-                                <HotelCard cityHotel={cityHotelList.pictures} />
-
-                                {/* <HotelCard hotelLocation={cityHotelList.location} /> */}
+                            <HotelCard image = {cityHotelList.pictures[0]}
+                                       name ={cityHotelList.name} 
+                                       stars = {cityHotelList.stars}
+                                       price = {cityHotelList.price}/>
                             </div>
                         )
                     })}
+                </div>
+                <div>
+                    {/* <HotelMap /> */}
+                </div>
 
             </div>
         )
