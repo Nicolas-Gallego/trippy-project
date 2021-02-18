@@ -16,7 +16,7 @@ export default class CityCard extends Component {
        )}else{ return (
          <div className=" col-sm-6  col-lg-3">
              <div className="row">
-                <div className=" col-sm-6  col-lg-1"></div>
+                <div className=" col-sm-6  col-lg-3"></div>
                 <Link to={`/hotels/${this.props.slug}`}>
                     <img src={source} class="card-img-top" alt="..."/>
                     <p>{this.props.cityName}</p>
