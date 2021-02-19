@@ -42,8 +42,9 @@ export default class Hotel extends Component {
     console.log("City center lat :", newLat);
     console.log("City center long :", newLong);
     return (
-      <div className="container-fluid">
+        <div>
         <NavBar />
+      <div className="container-fluid">
         <div className="row">
           <div className="col-12">
             <div className="row">
@@ -53,6 +54,7 @@ export default class Hotel extends Component {
                     return (
                       <div className=" col-12 col-sm-6  col-lg-5 hotelCard">
                         <HotelCard
+                          id={cityHotelList._id}
                           image={cityHotelList.pictures[0]}
                           name={cityHotelList.name}
                           stars={cityHotelList.stars}
@@ -65,12 +67,17 @@ export default class Hotel extends Component {
               </div>
 
               <div className=" col-sm-12 col-lg-5 hotelCard">
-                <HotelMap cityLatitude={newLat} cityLongitude={newLong}  center={this.state.center} hotelMark={this.state.hotels}/>
-
+                <HotelMap
+                  cityLatitude={newLat}
+                  cityLongitude={newLong}
+                  center={this.state.center}
+                  hotelMark={this.state.hotels}
+                />
               </div>
             </div>
           </div>
         </div>
+      </div>
       </div>
     );
   }

@@ -3,6 +3,7 @@
   src: url("./fonts/Montserrat-Regular.ttf");
 }
 
+
 body {
   font-family: "montserra";
   background-color: #cccccc;
@@ -11,9 +12,18 @@ body {
 }
 
 .navbar {
+ 
+  z-index: 7;
+  width: 100%; 
+  top: 0;
   background-color: #00a64a;
   font-weight: 900;
   height: 50px;
+  position: fixed;
+}
+.headCommo{
+  background-color: #00a64a;
+
 }
 
 h1 {
@@ -39,6 +49,8 @@ p{
   margin: 0;
 }
 .hotelCard {
+  margin-top: 100px;
+  z-index: 1;
   margin: 10px;
 }
 
@@ -58,4 +70,8 @@ p{
 .hotelImg {
   height: 200px;
   width: 250px;
+}
+
+a{
+  text-decoration: none;
 }
