@@ -51,9 +51,6 @@ p{
 .hotelCardGroup{
   border-radius: 30px;
   border-radius: 1px solid white;
-  height: 310px;
-  max-height: 310px;
-  min-height: 310px;
   width: 250px;
 }
 .hotelImg {
