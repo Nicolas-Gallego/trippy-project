@@ -15,7 +15,7 @@ export default class Hotel extends Component {
             hotels: [],
             image: "http://localhost:3002",
             //  hotelURL: 'http://localhost:3002/api/hotels/city/<city>'
-            center:{
+            center: {
                 lat: 0,
                 lon: 0,
             },
@@ -44,23 +44,33 @@ export default class Hotel extends Component {
         console.log("City center lat :", newLat);
         console.log("City center long :", newLong);
         return (
-            <div>
 
-                <div>
-                    <HotelMap cityLatitude={newLat} 
-                              cityLongitude={newLong}/> 
-                </div>
-                <div>
-                    {this.state.hotels.map((cityHotelList) => {
-                        return (
-                            <div>
-                            <HotelCard image = {cityHotelList.pictures[0]}
-                                       name ={cityHotelList.name} 
-                                       stars = {cityHotelList.stars}
-                                       price = {cityHotelList.price}/>
+            <div className="container-fluid">
+                <NavBar />
+                <div className="row">
+                    <div className="col-12">
+                        <div className="row">
+                            <div className="col-12 col-sm-8 col-lg-6">
+                                <div className="row">
+                                    {this.state.hotels.map((cityHotelList) => {
+                                        return (
+                                            <div className=" col-12 col-sm-6  col-lg-5 hotelCard">
+                                                <HotelCard image={cityHotelList.pictures[0]}
+                                                    name={cityHotelList.name}
+                                                    stars={cityHotelList.stars}
+                                                    price={cityHotelList.price} />
+                                            </div>
+                                        )
+                                    })}
+                                </div>
                             </div>
-                        )
-                    })}
+
+                            <div className=" col-sm-12 col-lg-5 hotelCard">
+                                <HotelMap cityLatitude={newLat}
+                                    cityLongitude={newLong} />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         )

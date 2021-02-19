@@ -8,9 +8,9 @@ export default class HotelMap extends Component {
       <div>
         <Map 
           center={[this.props.cityLatitude, this.props.cityLongitude]}
-          zoom={13}
+          zoom={12.5}
           scrollWheelZoom={false}
-          style={{height:300}}
+          style={{height:550}}
         >
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
