@@ -3,15 +3,11 @@ import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import config from '../src/utils/api'
 import "./App.css"
-import Home from './Views/Home';
-import Hotels from './Views/Hotels';
-import HotelPage from './Views/HotelPage';
-import Error404 from './Views/Error';
-// import NavBar from './Components/NavBar';
-// import CityCard from './Components/CityCard';
-// import HotelCard from './Components/HotelCard';
-// import HotelMap from './Components/HotelMap';
-// import HotelMaker from './Components/HotelMaker';
+import Home from './views/Home';
+import Hotels from './views/Hotels';
+import HotelPage from './views/HotelPage';
+import Error404 from './views/Error';
+
 
 class App extends React.Component {
   constructor(props) {

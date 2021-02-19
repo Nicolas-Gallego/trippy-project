@@ -14,7 +14,6 @@ export default class Hotel extends Component {
         this.state = {
             hotels: [],
             image: "http://localhost:3002",
-            //  hotelURL: 'http://localhost:3002/api/hotels/city/<city>'
             center:{
                 lat: 0,
                 lon: 0,
