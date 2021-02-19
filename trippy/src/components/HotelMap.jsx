@@ -19,7 +19,7 @@ export default class HotelMap extends Component {
             return (
               <Marker position={[items.location.lat, items.location.lon]}>
             <Popup>
-              {`${items.name} ${items.price} €`}
+              {`${items.name} | ${items.price} €`}
             </Popup>
           </Marker>
             )
