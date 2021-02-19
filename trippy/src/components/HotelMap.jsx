@@ -19,7 +19,7 @@ export default class HotelMap extends Component {
             return (
               <Marker position={[items.location.lat, items.location.lon]}>
             <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
+              {`${items.name} ${items.price} €`}
             </Popup>
           </Marker>
             )
