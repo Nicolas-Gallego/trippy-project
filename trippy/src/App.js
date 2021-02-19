@@ -34,7 +34,7 @@ class App extends React.Component {
           <Route exact path="/" component={Home} />
           <Route path="/hotels/:city" component={Hotels} />
           <Route path="/hotel" component={HotelPage} />
-          {/* <Route path="/:id" component={HotelPage} /> */}
+          <Route path="/:id" component={HotelPage} />
           <Route path="*" component={Error404} /> 
         </Switch>
 

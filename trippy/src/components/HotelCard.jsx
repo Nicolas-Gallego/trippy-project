@@ -24,7 +24,7 @@ export default class HotelCard extends Component {
                     }}
                     />
                     <div class="card-body">
-                        <h6 class="card-title hotelName">{this.props.name}</h6>
+                        <Link to={"../hotel/" + this.props.id}>{this.props.name}</Link>
                         <div className="priceStar">
                             <p class="card-text">{this.props.price} € </p>
                             <p class="card-text">
