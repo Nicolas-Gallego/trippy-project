@@ -12,7 +12,7 @@ export default class Hotel extends Component {
     super(props);
     this.state = {
       hotels: [],
-      image: "http://localhost:3002",
+      image: "",
       //  hotelURL: 'http://localhost:3002/api/hotels/city/<city>'
       center: {
         lat: 0,
@@ -65,7 +65,8 @@ export default class Hotel extends Component {
               </div>
 
               <div className=" col-sm-12 col-lg-5 hotelCard">
-                <HotelMap cityLatitude={newLat} cityLongitude={newLong} />
+                <HotelMap cityLatitude={newLat} cityLongitude={newLong}  center={this.state.center} hotelMark={this.state.hotels}/>
+
               </div>
             </div>
           </div>
