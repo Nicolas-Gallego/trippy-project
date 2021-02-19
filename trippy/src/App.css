@@ -17,9 +17,11 @@ body {
 }
 
 h1 {
+  padding-top: 24px;  
+  padding-bottom: 24px;  
   font-size: 22px;
-  
   font-weight: 700;
+  padding-left: 165px;
 }
 
 h2 {
