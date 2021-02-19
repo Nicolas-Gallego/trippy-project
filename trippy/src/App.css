@@ -30,9 +30,33 @@ h2 {
   width:100%;
 }
 .cityImg2{
-  width:100%;
+  width: 100%;
 }
 
 p{
   margin: 0;
+}
+.hotelCard {
+  margin: 10px;
+}
+
+.priceStar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.hotelName {
+  color: aqua;
+}
+.hotelCardGroup{
+  border-radius: 30px;
+  border-radius: 1px solid white;
+  height: 310px;
+  max-height: 310px;
+  min-height: 310px;
+  width: 250px;
+}
+.hotelImg {
+  height: 200px;
+  width: 250px;
 }

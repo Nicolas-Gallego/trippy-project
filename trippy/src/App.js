@@ -8,7 +8,6 @@ import Hotels from './views/Hotels';
 import HotelPage from './views/HotelPage';
 import Error404 from './views/Error';
 
-
 class App extends React.Component {
   constructor(props) {
     super(props);
